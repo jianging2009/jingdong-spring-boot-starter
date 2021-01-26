@@ -1,4 +1,4 @@
-package com.holyw.duoduoke.config;
+package com.holyw.duoduoke.config.jingdong;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -9,9 +9,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date: 2021/1/11
  **/
 @ConfigurationProperties(
-        prefix = "duoduoke.api"
+        prefix = "jingdong.api"
 )
-public class DuoduokePropeties {
+public class JingdongPropeties {
     private String clientId;
     private String clientSecret;
     private Integer connectionTimeoutMillis = 300;

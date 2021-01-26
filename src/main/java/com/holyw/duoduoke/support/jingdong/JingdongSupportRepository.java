@@ -1,5 +1,9 @@
-package com.holyw.duoduoke.support;
+package com.holyw.duoduoke.support.jingdong;
 
+import com.holyw.duoduoke.response.jingdong.UnionOpenGoodsMaterialQueryResponse;
+import com.holyw.duoduoke.response.jingdong.UnionOpenOrderRowQueryResponse;
+import com.holyw.duoduoke.response.jingdong.UnionOpenStatisticsRedpacketQueryResponse;
+import com.jd.open.api.sdk.request.AbstractRequest;
 import jd.union.open.coupon.query.response.UnionOpenCouponQueryResponse;
 import jd.union.open.goods.query.response.UnionOpenGoodsQueryResponse;
 import jd.union.open.order.query.response.UnionOpenOrderQueryResponse;
@@ -20,7 +24,7 @@ public interface JingdongSupportRepository {
      * request.setGoodsReqDTO(goodsReqDTO);
      * UnionOpenGoodsQueryResponse response=client.execute(request);
      */
-    UnionOpenGoodsQueryResponse unionOpenGoodsQuery();
+    UnionOpenGoodsQueryResponse unionOpenGoodsQuery(AbstractRequest request);
 
     /**
      * jd.union.open.coupon.query
@@ -32,7 +36,7 @@ public interface JingdongSupportRepository {
      * request.setCouponUrls(couponUrls);
      * UnionOpenCouponQueryResponse response=client.execute(request);
      */
-    UnionOpenCouponQueryResponse unionOpenCouponQuery();
+    UnionOpenCouponQueryResponse unionOpenCouponQuery(AbstractRequest request);
     /**
      * 京享红包效果数据
      * jd.union.open.statistics.redpacket.query
@@ -42,7 +46,7 @@ public interface JingdongSupportRepository {
      * request.setEffectDataReq(effectDataReq);
      * UnionOpenStatisticsRedpacketQueryResponse response=client.execute(request);
      */
-    UnionOpenStatisticsRedpacketQueryResponse unionOpenStatisticsRedpacketQuery();
+    UnionOpenStatisticsRedpacketQueryResponse unionOpenStatisticsRedpacketQuery(AbstractRequest request);
     /**
      * 猜你喜欢商品推荐
      * jd.union.open.goods.material.query
@@ -52,7 +56,7 @@ public interface JingdongSupportRepository {
      * request.setGoodsReq(goodsReq);
      * UnionOpenGoodsMaterialQueryResponse response=client.execute(request);
      */
-    UnionOpenGoodsMaterialQueryResponse unionOpenGoodsMaterialQuery();
+    UnionOpenGoodsMaterialQueryResponse unionOpenGoodsMaterialQuery(AbstractRequest request);
     /**
      * 订单查询接口
      * jd.union.open.order.query
@@ -62,7 +66,7 @@ public interface JingdongSupportRepository {
      * request.setOrderReq(orderReq);
      * UnionOpenOrderQueryResponse response=client.execute(request);
      */
-    UnionOpenOrderQueryResponse unionOpenOrderQuery();
+    UnionOpenOrderQueryResponse unionOpenOrderQuery(AbstractRequest request);
     /**
      * 订单行查询接口
      * jd.union.open.order.row.query
@@ -72,6 +76,6 @@ public interface JingdongSupportRepository {
      * request.setOrderReq(orderReq);
      * UnionOpenOrderRowQueryResponse response=client.execute(request);
      */
-    UnionOpenOrderRowQueryResponse unionOpenOrderRowQuery();
+    UnionOpenOrderRowQueryResponse unionOpenOrderRowQuery(AbstractRequest request);
 
 }

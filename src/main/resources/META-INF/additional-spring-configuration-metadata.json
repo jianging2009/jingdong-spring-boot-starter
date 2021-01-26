@@ -1,33 +1,33 @@
 {
   "properties": [
     {
-      "name": "duoduoke.api.clientId",
+      "name": "jingdong.api.clientId",
       "type": "java.lang.String",
-      "description": "多多客clientId",
+      "description": "京东clientId",
       "defaultValue": "1"
     },
     {
-      "name": "duoduoke.api.clientSecret",
+      "name": "jingdong.api.clientSecret",
       "type": "java.lang.String",
-      "description": "多多客clientSecret",
+      "description": "京东clientSecret",
       "defaultValue": "1"
     },
     {
-      "name": "duoduoke.api.client.connectionTimeoutMillis",
+      "name": "jingdong.api.client.connectionTimeoutMillis",
       "type": "java.lang.Integer",
-      "description": "多多客client超时时间",
+      "description": "京东client超时时间",
       "defaultValue": "300"
     },
     {
-      "name": "duoduoke.api.client.connectionRequestTimeout",
+      "name": "jingdong.api.client.connectionRequestTimeout",
       "type": "java.lang.Integer",
-      "description": "多多客client请求超时时间",
+      "description": "京东client请求超时时间",
       "defaultValue": "300"
     },
     {
-      "name": "duoduoke.api.clientClassName",
+      "name": "jingdong.api.clientClassName",
       "type": "java.lang.String",
-      "description": "多多客client请求超时时间",
+      "description": "京东client请求超时时间",
       "defaultValue": "300"
     }
   ]

@@ -5,13 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
 
-
-
   <groupId>com.holyw</groupId>
-  <artifactId>duoduoke-spring-boot-starter</artifactId>
+  <artifactId>jingdong-spring-boot-starter</artifactId>
   <version>1.0.0</version>
 
-  <name>duoduoke-spring-boot-starter</name>
+  <name>jingdong-spring-boot-starter</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -40,13 +38,6 @@
       <version>2.3.7.RELEASE</version>
     </dependency>
 
-    <dependency>
-      <groupId>com.pinduoduo</groupId>
-      <artifactId>pop-sdk</artifactId>
-      <version>1.9.70</version>
-      <classifier>all</classifier><!--如果无法导入这个包，可以手动导入使用resources/jar/pop-sdk-1.9.70-all.jar-->
-    </dependency>
-
     <!--京东sdk-->
     <!--如果无法导入这个包，可以手动导入使用resources/jar/jd-cps-client-20210107.jar-->
     <dependency>
@@ -58,7 +49,7 @@
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
-      <version>1.2.72</version>
+      <version>1.2.73</version>
     </dependency>
 
     <dependency>

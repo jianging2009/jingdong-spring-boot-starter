@@ -1,6 +1,5 @@
 package com.holyw.duoduoke.exception;
 
-import com.holyw.duoduoke.config.DuoduokeAutoConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,10 +9,10 @@ import org.slf4j.LoggerFactory;
  * @author: Denchy Chiang
  * @date: 2021/1/11
  **/
-public class DuoduokeClientNotFoundException extends Exception {
-    private static final Logger log = LoggerFactory.getLogger(DuoduokeAutoConfiguration.class);
+public class ClientNotFoundException extends Exception {
+    private static final Logger log = LoggerFactory.getLogger(ClientNotFoundException.class);
 
-    public DuoduokeClientNotFoundException() {
+    public ClientNotFoundException() {
         super();
         log.info("没有找到Client自定义实现类...");
     }

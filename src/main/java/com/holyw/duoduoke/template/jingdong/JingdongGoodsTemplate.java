@@ -34,8 +34,4 @@ public class JingdongGoodsTemplate {
         return goodsVO;
     }
 
-    public UnionOpenOrderQueryResponse orderQuery(AbstractRequest request) {
-        UnionOpenOrderQueryResponse unionOpenOrderQueryResponse = jingdongSupportRepository.unionOpenOrderQuery(request);
-        return unionOpenOrderQueryResponse;
-    }
 }

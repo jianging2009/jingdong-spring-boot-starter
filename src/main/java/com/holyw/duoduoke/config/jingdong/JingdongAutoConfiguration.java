@@ -6,6 +6,7 @@ import com.holyw.duoduoke.exception.ClientNotFoundException;
 import com.holyw.duoduoke.proxy.jingdong.JingdongPrimaryProxy;
 import com.holyw.duoduoke.support.jingdong.JingdongSupportRepository;
 import com.holyw.duoduoke.template.jingdong.JingdongGoodsTemplate;
+import com.holyw.duoduoke.template.jingdong.JingdongOrderTemplate;
 import com.jd.open.api.sdk.JdClient;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -49,6 +50,11 @@ public class JingdongAutoConfiguration {
     @Bean
     public JingdongGoodsTemplate jingdongGoodsTemplate(JingdongSupportRepository jingdongSupportRepository) {
         return new JingdongGoodsTemplate(jingdongSupportRepository);
+    }
+
+    @Bean
+    public JingdongOrderTemplate jingdongOrderTemplate(JingdongSupportRepository jingdongSupportRepository) {
+        return new JingdongOrderTemplate(jingdongSupportRepository);
     }
 
 //    @Bean

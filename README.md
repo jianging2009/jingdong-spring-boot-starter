@@ -10,7 +10,7 @@
 #client id 必需京东联盟APP_KEY
 duoduoke.api.client-id="your client id"
 #client secret 必需京东联盟APP_SECRET
-duoduoke.api.client-secret="you client secret"
+duoduoke.api.client-secret="your client secret"
 #client超时时间 非必需
 duoduoke.api.connection-timeout-millis=300
 #request请求超时时间 非必需
@@ -52,12 +52,12 @@ public class MyDuoduokeClient implements IClient {
     private String getClientIdFromDB() {
         //redisTemplate.opsForValue().get("");
         //configMapper.getDuoduokeConfig("")
-        return "xxxxxxxxxx";
+        return "your client id";
     }
     private String getClientSecretFromDB() {
         //redisTemplate.opsForValue().get("");
         //configMapper.getDuoduokeConfig("")
-        return "xxxxxxxxxx";
+        return "your client secret";
     }
 }
 ```
